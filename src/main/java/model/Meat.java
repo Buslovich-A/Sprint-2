@@ -9,7 +9,6 @@ public class Meat extends Food {
         this.price = price;
     }
 
-    // Возвращает стандартную скидку
     public double getDiscount() {
         return DEFAULT_DISCOUNT;
     }
