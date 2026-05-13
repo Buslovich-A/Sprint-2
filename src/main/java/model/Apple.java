@@ -14,7 +14,6 @@ public class Apple extends Food {
         this.colour = colour;
     }
 
-    // Возврщает скидку в зависимости от цвета яблок
     public double getDiscount() {
         if (RED.equals(colour)) {
             return RED_APPLE_DISCOUNT;
