@@ -1,5 +1,5 @@
-package service;
-import model.Food;
+package org.praktikum.buslovich.service;
+import org.praktikum.buslovich.model.Food;
 
 public class ShoppingCart {
     private Food[] foods;
@@ -11,32 +11,29 @@ public class ShoppingCart {
     public double getAmountWithoutDiscount() {
         double amountWithoutDiscount = 0;
 
-        for (int i = 0; i < foods.length; i++) {
-            amountWithoutDiscount += (foods[i].getAmount() * foods[i].getPrice());
+        for (Food food : foods) {
+            amountWithoutDiscount += (food.getAmount() * food.getPrice());
         }
-
         return amountWithoutDiscount;
     }
 
     public double getAmountWithDiscount() {
         double amountWithDiscount = 0;
 
-        for (int i = 0; i < foods.length; i++) {
-            amountWithDiscount += ((foods[i].getAmount() * foods[i].getPrice()) - (foods[i].getAmount() * foods[i].getPrice() * foods[i].getDiscount()));
+        for (Food food : foods) {
+            amountWithDiscount += ((food.getAmount() * food.getPrice()) - (food.getAmount() * food.getPrice() * food.getDiscount()));
         }
-
         return amountWithDiscount;
     }
 
     public double getVegAmountWithoutDiscount() {
         double vegAmountWithoutDiscount = 0;
 
-        for (int i = 0; i < foods.length; i++) {
-            if (foods[i].isVegetarian()) {
-                vegAmountWithoutDiscount += foods[i].getAmount() * foods[i].getPrice();
+        for (Food food : foods) {
+            if (food.isVegetarian()) {
+                vegAmountWithoutDiscount += food.getAmount() * food.getPrice();
             }
         }
-
         return vegAmountWithoutDiscount;
     }
 }

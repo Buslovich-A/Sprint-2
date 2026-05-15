@@ -1,4 +1,4 @@
-package model.constants;
+package org.praktikum.buslovich.model.constants;
 
 public class Colour {
     public static final String RED = "red";

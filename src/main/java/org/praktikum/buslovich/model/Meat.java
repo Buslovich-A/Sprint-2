@@ -1,6 +1,6 @@
-package model;
+package org.praktikum.buslovich.model;
 
-import static model.constants.Discount.DEFAULT_DISCOUNT;
+import static org.praktikum.buslovich.model.constants.Discount.DEFAULT_DISCOUNT;
 
 public class Meat extends Food {
     public Meat(int amount, double price) {

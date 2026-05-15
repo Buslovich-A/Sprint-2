@@ -1,8 +1,8 @@
-package model;
+package org.praktikum.buslovich.model;
 
-import static model.constants.Colour.RED;
-import static model.constants.Discount.DEFAULT_DISCOUNT;
-import static model.constants.Discount.RED_APPLE_DISCOUNT;
+import static org.praktikum.buslovich.model.constants.Colour.RED;
+import static org.praktikum.buslovich.model.constants.Discount.DEFAULT_DISCOUNT;
+import static org.praktikum.buslovich.model.constants.Discount.RED_APPLE_DISCOUNT;
 
 public class Apple extends Food {
     private String colour;

@@ -1,4 +1,4 @@
-package model;
+package org.praktikum.buslovich.model;
 
 public abstract class Food implements Discountable {
     protected int amount;

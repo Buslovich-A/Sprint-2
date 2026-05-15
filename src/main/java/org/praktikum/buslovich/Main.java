@@ -1,10 +1,12 @@
-import model.Apple;
-import model.Food;
-import model.Meat;
-import service.ShoppingCart;
+package org.praktikum.buslovich;
 
-import static model.constants.Colour.GREEN;
-import static model.constants.Colour.RED;
+import org.praktikum.buslovich.model.Apple;
+import org.praktikum.buslovich.model.Food;
+import org.praktikum.buslovich.model.Meat;
+import org.praktikum.buslovich.service.ShoppingCart;
+
+import static org.praktikum.buslovich.model.constants.Colour.GREEN;
+import static org.praktikum.buslovich.model.constants.Colour.RED;
 
 public class Main {
 

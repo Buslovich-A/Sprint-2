@@ -1,4 +1,4 @@
-package model.constants;
+package org.praktikum.buslovich.model.constants;
 
 public class Discount {
     public static final double DEFAULT_DISCOUNT = 0;
