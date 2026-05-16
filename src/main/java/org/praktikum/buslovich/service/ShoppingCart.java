@@ -12,7 +12,7 @@ public class ShoppingCart {
         double amountWithoutDiscount = 0;
 
         for (Food food : foods) {
-            amountWithoutDiscount += (food.getAmount() * food.getPrice());
+            amountWithoutDiscount += food.getAmount() * food.getPrice();
         }
         return amountWithoutDiscount;
     }
